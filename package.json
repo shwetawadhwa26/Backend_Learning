@@ -1,4 +1,4 @@
-{
+ {
   "name": "backend",
   "version": "1.0.0",
   "description": "",
@@ -12,6 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.19.2",
+    "give-me-a-joke": "^0.5.1",
     "node": "^22.6.0"
   },
   "devDependencies": {

@@ -3,8 +3,8 @@ module.exports.PI=3.14;
 module.exports.square =x=>x*x;
 
 
-const sqaures = x =>x*x;
-exports.squares=squares;
+// const sqaures = x =>x*x;
+// exports.squares=squares;
 // exports.PI=PI;
 // module.exports.add=add;
 // module.exports.PI=PI;
