@@ -10,7 +10,9 @@ app.use(session({ secret: "test123!@POK", resave: true, saveUninitialized: true 
 let sessionMiddleware = (req, res, next) => {
     req.session.msg = "MIDDLEWARE says Hello ";
     console.log("Session id: " + req.session.id);
-    next();
+    res.send("<h1> end of request cycle</h1>")
+    //next();
+    //if next() is not present in middleware code then it gets tuck in an infinite loop 
 };
 app.use(sessionMiddleware);
 
