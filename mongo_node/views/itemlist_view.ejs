@@ -1,0 +1,20 @@
+<%- include("itemheader"); %>
+<div style= "width:1200px; height:auto;
+min-height:500px; border:1px solid red;">
+<table align = "center">
+       <% for(let d of itemList)  {
+	   %>
+	   <tr>
+	   <td><%=d.iname%></td> 
+	   <td><%=d.price%></td>
+	   <td><%=d.category%></td>
+	   <td><%=d.dom%></td>
+	   <td><%=d.color%></td>
+	   <td>
+	   <a href="edititem?itemid=<%=d._id%>">Edit</a>
+	   <a href="delitem?itemid=<%=d._id%>">Delete</a>
+	   </td>
+	   </tr>
+	   <% }  %>
+</div>
+<%- include("itemfooter"); %>
